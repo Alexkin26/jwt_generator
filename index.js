@@ -18,6 +18,6 @@ app.route('/jwt').get((req, res) => {
 
 print_t_rex();
 
-app.listen(3001);
+app.listen(process.env.PORT);
 
-console.log('App running and lintening on port 3001...');
+console.log('App running and lintening on port ' + process.env.PORT + '...');
