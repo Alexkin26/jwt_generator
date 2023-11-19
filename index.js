@@ -9,6 +9,7 @@ app.route('/jwt').get((req, res) => {
 
   console.log('--------------------------------------------------------------------------');
   console.log('Key generated on ' + new Date());
+  console.log('--------------------------------------------------------------------------');
   console.log(value);
 
   res.json({ value });
