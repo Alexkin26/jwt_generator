@@ -5,14 +5,14 @@ const { print_t_rex } = require('./helpers');
 app = express();
 
 app.route('/jwt').get((req, res) => {
-  let value = generateJWT();
+  let jwtValue = generateJWT();
 
   console.log('--------------------------------------------------------------------------');
   console.log('Key generated on ' + new Date());
   console.log('--------------------------------------------------------------------------');
-  console.log(value);
+  console.log(jwtValue);
 
-  res.json({ value });
+  res.json({ jwtValue });
 });
 
 print_t_rex();
